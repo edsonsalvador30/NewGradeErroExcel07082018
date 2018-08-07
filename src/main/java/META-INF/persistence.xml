@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="app" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <non-jta-data-source>java:comp/env/jdbc/main</non-jta-data-source>
+        <class>app.entity.Funcionario</class>
+        <class>app.entity.Vendedor</class>
+        <class>app.entity.Fornecedores</class>
+        <class>app.entity.Comerciante</class>
+        <class>app.entity.User</class>
+        <class>app.entity.Professor</class>
+        <class>app.entity.Compras</class>
+        <class>app.entity.ComercianteProdutos</class>
+        <class>app.entity.Escola</class>
+        <class>app.entity.Produtos</class>
+        <class>app.entity.Cliente</class>
+        <class>app.entity.Alunos</class>
+        <class>app.entity.Distribuidor</class>
+        <class>app.entity.Role</class>
+        <class>app.entity.Pedido</class>
+        <class>app.entity.Dependentes</class>
+        <class>app.entity.Cargo</class>
+        <class>app.entity.Turma</class>
+        <properties>
+            <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+        </properties>
+    </persistence-unit>
+</persistence>
